@@ -1,0 +1,339 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.isi {
+  background-image: url("gambar/bgisi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  margin-top: -70px;
+  width: 400px;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 218, 5);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.slogan h3 {
+  font-family: "Times New Roman";
+  font-size: 40px;
+  text-shadow: 0 4px 4px black;
+}
+
+/* Bagian Free Antar Jemput */
+.free {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.free img {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.free-antar h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+.free-antar p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Bagian Isi 2 */
+.isi2 {
+  padding: 50px 30px;
+  background-color: #f9f9f9;
+  min-height: 600px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service {
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 20px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cuci {
+  text-align: center;
+  margin: auto;
+}
+
+.menerima {
+  margin-bottom: 50px;
+}
+
+.service-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-list {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Gambar Layanan */
+.foto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.img-service {
+  position: relative;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.img-service img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-service img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* link wa */
+.wa {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #25d366;
+  border-radius: 50px;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.img-wa {
+  width: 70px;
+  height: 40px;
+}
+
+.link-wa a {
+  font-size: 16px;
+  padding-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Bagian komentar */
+.komentar {
+  position: relative;
+  margin-top: 50px;
+  height: auto;
+  margin-bottom: 30px;
+  width: 80%;
+  margin: auto;
+  background-color: #f4f4f4;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.judul-komen {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.komen form {
+  display: flex;
+  flex-direction: column;
+}
+
+.komen label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.komen input[type="text"],
+.komen input[type="email"],
+.komen textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.komen textarea {
+  resize: vertical;
+}
+
+.komen .submit-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.komen .submit-btn:hover {
+  background-color: #128c7e;
+}
+
+.btn-children {
+  display: flex;
+  align-items: center;
+}
+.isntLoading {
+  display: none;
+}
+
+.btn-children .loading {
+  margin-left: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 255, 255, 0.4);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .isi {
+    width: 100vh;
+  }
+
+  .isi2 {
+    width: 100vh;
+  }
+
+  .logo {
+    width: 300px;
+    margin-top: -45px;
+  }
+
+  .slogan h3 {
+    font-size: 30px;
+  }
+
+  .free {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    right: 0;
+    margin-top: 20px;
+  }
+
+  .img-service,
+  .img-service2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menerima {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column; /* Mengubah layout ke kolom pada layar kecil */
+    align-items: center; /* Meratakan card di tengah */
+  }
+
+  .service-list {
+    width: 80%; /* Membuat lebar card 80% dari container */
+    margin-bottom: 20px; /* Memberikan jarak antar card */
+  }
+
+  .service-list li {
+    font-size: 14px; /* Ukuran font sedikit lebih kecil pada layar kecil */
+  }
+
+  .komentar {
+    width: 100vh;
+  }
+}

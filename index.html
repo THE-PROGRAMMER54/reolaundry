@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reo Laundry - Cepat Dan Bersih</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="gambar/LogoLaundry.jpg" />
+  </head>
+
+  <style>
+  </style>
+
+  <body>
+    <div class="container">
+      <!-- Bagian Isi -->
+      <div class="isi">
+        <div
+          class="img"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <img src="gambar/logorl.png" alt="logo utama" class="logo" />
+        </div>
+        <div class="slogan">
+          <h3>Laundry Dengan Pelayanan Terbaik</h3>
+          <h3>Harga Murah Tapi Kualitas Tidak Murahan</h3>
+        </div>
+        <div class="free">
+          <img src="gambar/ojek.png" class="img-ojek" alt="gambar ojek" />
+          <div class="free-antar">
+            <h1>Free Antar Jemput</h1>
+            <p>Untuk Bandar Jaya dan sekitarnya</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Isi 2 -->
+      <div class="isi2">
+        <h2 class="modal-title">Layanan Kami</h2>
+        <div class="service">
+          <div class="menerima">
+            <div class="cuci">
+              <h3>Menerima Cuci</h3>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-list">
+              <ul>
+                <li>Pakaian</li>
+                <li>Boneka</li>
+                <li>Sepatu</li>
+                <li>Karpet</li>
+                <li>Bed Cover</li>
+              </ul>
+            </div>
+            <div class="service-list">
+              <ul>
+                <li>Cuci Kiloan</li>
+                <li>Cuci Kering</li>
+                <li>Cuci Exspress</li>
+                <li>Cuci Satuan</li>
+                <li>Setrika</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="foto">
+          <div class="img-service">
+            <img src="gambar/IMG-20241207-WA0017.jpg" alt="laundry kering" />
+          </div>
+          <div class="img-service">
+            <img src="gambar/IMG-20241207-WA0010.jpg" alt="laundry kering" />
+          </div>
+          <div class="img-service">
+            <img src="gambar/IMG-20241207-WA0019.jpg" alt="laundry kering" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Komentar -->
+      <div class="komentar">
+        <div class="judul-komen">
+          <h2>Berikan komentar Anda Tentang Layanan Kami</h2>
+        </div>
+        <div class="komen">
+          <form id="form">
+            <label for="nama">Nama Anda:</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              autocomplete="off"
+              placeholder="Masukkan nama Anda"
+              required
+            />
+            
+            <label for="komentar">Komentar Anda:</label>
+            <textarea
+              id="komentar"
+              name="komentar"
+              rows="5"
+              placeholder="Tulis komentar Anda di sini..."
+              required
+            ></textarea>
+
+            <button type="submit" class="submit-btn" onclick="kirim(event)">
+              <div class="btn-children">
+                <p>Kirim komentar</p>
+                <img
+                  class="loading isntLoading"
+                  height="25"
+                  src="svg/loading.svg"
+                  alt=""
+                />
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bagian Footer -->
+      <div class="footer">
+        <marquee>
+          <p>
+            Reo Laundry adalah layanan laundry terbaik yang dapat memberikan
+            pelayanan terbaik dan terjangkau kepada semua pelanggan. Kami
+            menyediakan berbagai pilihan paket laundry, mulai dari laundry
+            kering dan kotor hingga laundry bersih dan kuat.
+          </p>
+        </marquee>
+      </div>
+
+      <!-- Link WA -->
+      <a
+        href="http://wa.me/6289528759740?text=REO%20LAUNDRY%0A%0ADaftar%20Harga:%0A%0A1.Cuci%20Gosok%201%20hari%206000/kg%0A2.Cuci%20Gosok%202-3%20hari%205000/kg%0A3.Gosok%204000/kg%0A%0AFree%20Antar-Jemput%20Untuk%20Area%20Bandar%20Jaya%20Dan%20sekitarnya"
+        target="_blank"
+      >
+        <div class="wa">
+          <img src="gambar/wa.png" class="img-wa" alt="gambar wa" />
+          <div class="link-wa">
+            <a
+              href="http://wa.me/6289528759740?text=REO%20LAUNDRY%0A%0ADaftar%20Harga:%0A%0A1.Cuci%20Gosok%201%20hari%206000/kg%0A2.Cuci%20Gosok%202-3%20hari%205000/kg%0A3.Gosok%204000/kg%0A%0AFree%20Antar-Jemput%20Untuk%20Area%20Bandar%20Jaya%20Dan%20sekitarnya"
+              target="_blank"
+              >Hubungi Kami</a
+            >
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- script emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="email.js"></script>
+  </body>
+</html>
